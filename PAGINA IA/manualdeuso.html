@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Manual de Seguridad - Rolling Curve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <div class="logo-btn" id="menu-toggle">
+                <img class="logo" src="img/mascota-escondida.png" alt="Mascota Rolling Curve">
+            </div>
+            <nav class="navbar" id="navbar-menu">
+                <ul>
+                    <li class="li"><a href="index.html">Inicio</a></li>
+                    <li class="li"><a href="disenocad.zip" download="disenocad.zip">Planos</a></li>
+                    <li class="li"><a href="manualdeuso.html">Manual de Seguridad</a></li>
+                    <li class="li"><a href="preguntasfrecuentes.html">Dudas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container" style="padding-top: 30px;">
+            <h1 style="font-family: var(--font-heading); font-size: 2.8rem; color: var(--color-white);">Manual de Seguridad</h1>
+            <p style="color: var(--color-baby-blue);">Normas técnicas y equipos de protección personal (EPP)</p>
+        </div>
+    </header>
+
+    <section class="section-padding section-light">
+        <div class="container">
+            
+
+            <div class="layout-row-left">
+                <div class="dynamic-text-box">
+                    <h3>Tu Seguridad es Primero: Equipamiento Indispensable</h3>
+                    <p>Pensamos en el bienestar y la tranquilidad de tu equipo de trabajo. Operar la roladora requiere la protección adecuada para garantizar jornadas continuas, eficientes y libres de accidentes.</p>
+                    
+                    <h4>Guantes de Alta Resistencia</h4>
+                    <p>Protegen tus manos contra los bordes filosos de las láminas metálicas durante la carga, ajuste y manipulación del material.</p>
+                    
+                    <h4>Lentes de Seguridad</h4>
+                    <p>Indispensables para proteger tus ojos en caso de que la lámina pierda estabilidad o se descontrole inesperadamente durante el proceso de curvado.</p>
+                    
+                    <h4>Mangas de Protección</h4>
+                    <p>Evitan raspaduras y cortes accidentales en los antebrazos al maniobrar láminas de gran tamaño cerca de la estructura.</p>
+                </div>
+                <div class="dynamic-img-box">
+                    <img src="img/epp.png" alt="Equipo de Protección Personal" class="materials-img" style="max-height:360px;">
+                </div>
+            </div>
+
+            <!-- Layout B: Imagen a la Izquierda | Texto a la Derecha -->
+            <div class="layout-row-right">
+                <div class="dynamic-img-box">
+                    <img src="img/mascotaseguridad.png" alt="Procedimiento Operativo Seguro" class="materials-img" style="max-height:360px;">
+                </div>
+                <div class="dynamic-text-box">
+                    <h3>Trabaja con Confianza: Pasos para una Operación Eficiente</h3>
+                    <p>Diseñamos la roladora Rolling Curve para que sea sumamente intuitiva y segura de operar. Siguiendo estas sencillas pautas, proteges tu equipo y extiendes la vida útil de tu máquina.</p>
+                    
+                    <h4>Inspección y Limpieza Previa</h4>
+                    <p>Verifica que los ejes, piñones y rodamientos estén lubricados. Además, limpia muy bien la lámina metálica antes de trabajarla para eliminar suciedad o residuos que entorpezcan el curvado.</p>
+
+                    <h4>Alineación de la Lámina</h4>
+                    <p>Posiciona la lámina sobre los rodillos inferiores manteniendo la distancia de seguridad recomendada para garantizar un rolado parejo.</p>
+
+                    <h4>Control de Presión Gradual</h4>
+                    <p>Ajusta el rodillo superior mediante la varilla roscada ACME de forma progresiva para no sobrecargar la lámina ni los mecanismos.</p>
+                </div>
+            </div>
+
+            <div class="layout-col-stacked">
+                <div class="dynamic-text-box" style="border-left:none; padding-left:0;">
+                    <h3>Respuesta Rápida y Medidas Preventivas</h3>
+                    <p>En cualquier taller, mantener la calma marca la diferencia. Nuestra cilindradora incorpora topes físicos para prevenir sobrecargas. En caso de alguna eventualidad o si el botón de apagado no responde, mantén la calma, aléjate inmediatamente de la máquina y déjala operar a distancia segura hasta que puedas desconectarla de la corriente o intervenirla de forma totalmente segura.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>ROLADORA AUTOMÁTICA COMPACTA<br>
+            © 2026 Rolling Curve Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarMenu = document.getElementById('navbar-menu');
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navbarMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navbarMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                navbarMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

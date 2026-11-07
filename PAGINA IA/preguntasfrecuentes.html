@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dudas Frecuentes - Rolling Curve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <div class="logo-btn" id="menu-toggle">
+                <img class="logo" src="img/mascota-escondida.png" alt="Mascota Rolling Curve">
+            </div>
+            <nav class="navbar" id="navbar-menu">
+                <ul>
+                    <li class="li"><a href="index.html">Inicio</a></li>
+                    <li class="li"><a href="disenocad.zip" download="disenocad.zip">Planos</a></li>
+                    <li class="li"><a href="manualdeuso.html">Manual de Seguridad</a></li>
+                    <li class="li"><a href="preguntasfrecuentes.html">Dudas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container" style="padding-top: 30px;">
+            <h1 style="font-family: var(--font-heading); font-size: 2.8rem; color: var(--color-white);">Dudas Frecuentes</h1>
+            <p style="color: var(--color-baby-blue);">Preguntas y respuestas sobre el equipo</p>
+        </div>
+    </header>
+
+    <section class="section-padding section-blue">
+<div class="container">
+    <div class="faq-list">
+
+        <div class="faq-item">
+            <h2>1</h2>
+            <div class="faq-content">
+                <h3>¿Por qué Rolling Curve es la inversión ideal que necesita mi taller?</h3>
+                <p>Sabemos lo costoso y estorboso que es adquirir cilindradoras industriales masivas. Diseñamos Rolling Curve pensando en el presupuesto y espacio de pequeños y medianos talleres. Te ofrece capacidad automatizada para láminas de hasta 3 mm con una inversión súper accesible, permitiéndote fabricar tubos, ductos y conos sin requerir trabajos manuales extenuantes ni procesos innecesarios.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h2>2</h2>
+            <div class="faq-content">
+                <h3>¿Qué tipo de trabajos y aplicaciones reales le puedo dar en mi día a día?</h3>
+                <p>¡Su versatilidad te va a encantar! Es perfecta para confeccionar ductos de ventilación y extracción HVAC, tolvas cónicas para dosificación de materiales, carcasas de protección translúcidas para maquinaria y todo tipo de piezas cilíndricas o cónicas para proyectos metalmecánicos.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h2>3</h2>
+            <div class="faq-content">
+                <h3>¿Qué tipo de modificaciones o adaptaciones le puedo hacer según mis necesidades?</h3>
+                <p>Nuestra roladora fue concebida de forma modular. Podés adaptar fácilmente el sistema de transmisión para motores con distinto torque, ajustar soportes para diferentes diámetros de rodillo o incluso integrar guías adicionales según los proyectos específicos que entren a tu taller.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h2>4</h2>
+            <div class="faq-content">
+                <h3>¿Es difícil adaptar la máquina si no dispongo exactamente de los mismos materiales de la guía?</h3>
+                <p>¡Para nada! No estás amarrado a repuestos únicos ni caros. La lista de materiales y los planos CAD te sirven como guía base, pero podés sustituir componentes por perfiles de acero o rodamientos equivalentes de tu proveedor local sin perder precisión ni fuerza.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h2>5</h2>
+            <div class="faq-content">
+                <h3>¿Qué tan complicado y costoso es el mantenimiento preventivo?</h3>
+                <p>Es sumamente sencillo y económico. Solo requiere lubricación periódica en chumaceras, rodamientos y cadena, además de revisar el apriete de la tornillería y la varilla ACME. Al usar piezas comerciales (como cadenas y piñones estándar), cualquier mantenimiento te saldrá a una fracción del costo industrial.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>ROLADORA AUTOMÁTICA COMPACTA<br>
+            © 2026 Rolling Curve Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarMenu = document.getElementById('navbar-menu');
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navbarMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navbarMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                navbarMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
